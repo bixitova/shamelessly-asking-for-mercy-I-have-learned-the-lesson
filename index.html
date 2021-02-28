@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broom's price</title>
+    <link rel="stylesheet" href="broom.css">
+</head>
+<body>
+    
+    <h1>Broom's qalyn calculator</h1>
+    <p> Well, well, here you are! Are you ready for it? <br><br>
+    I don't mean "a new happy family life" and bla-bla-bla. Are you ready to see whether your groom is worthy? <br><br>
+    Let's go!</p>
+    <form>
+        <label for="name">His name is...</label>
+        <input type="text" id="name" class="name" required> 
+        <br> 
+        <br>
+        <label for="bid">Starting bid: </label>
+        <input type="number" id="bid" class="bid" required>
+        <br>
+        <br>
+        <label for="edu"> What is his education degree? </label> 
+        <select id="edu" name="edu">
+            <option selected></option>
+            <option value="1.5" id="edu1"> Undergraduate degree </option>
+            <option value="1.2" id="edu2"> College degree </option>
+            <option value="1.05" id="edu3"> High school degree </option>
+            <option value="0.9" id="edu4"> Middle school degree </option>
+        </select> <br> <br>
+        <label for="fam"> What about his family net worth? </label> 
+        <select id="fam" name="fam">
+            <option selected></option>
+            <option value="2" id="fam1"> >$100.000 </option>
+            <option value="1.5" id="fam2"> $50.000-$100.000 </option>
+            <option value="1.2" id="fam3"> <$50.000 </option>
+        </select> <br> <br>
+        <label for="skill"> Let's talk about his skills! </label> <br> 
+        <input type="checkbox" id="skill1" name="skill1" value="100" class="skill">
+        <label for="skill1"> Plays the dombra </label> <br>
+        <input type="checkbox" id="skill2" name="skill2" value="200" class="skill">
+        <label for="skill2"> Good in cooking </label> <br>
+        <input type="checkbox" id="skill3" name="skill3" value="150" class="skill">
+        <label for="skill3"> Character as if he is a Disney prince </label> <br>
+        <input type="checkbox" id="skill4" name="skill4" value="100" class="skill">
+        <label for="skill4"> Sings like an angel </label>
+        <br> <br>
+        <label for="age"> Well, how old is The One? </label> <br>
+        <input type="radio" id="age1" name="age1" value="1.5">
+        <label for="age1"> Between 18-23 </label> <br>
+        <input type="radio" id="age2" name="age2" value="1.2">
+        <label for="age2"> Between 24-27 </label> <br>
+        <input type="radio" id="age3" name="age3" value="0.95">
+        <label for="age3"> 28+ </label> 
+        <br> <br>
+        <label for="rep"> Cheesy question about his reputation is here! </label> <br>
+        <input type="checkbox" id="rep1" name="rep1" value="0.85" class="rep">
+        <label for="rep1"> Gossips about his parent's attitude </label> <br>
+        <input type="checkbox" id="rep2" name="rep2" value="0.9" class="rep">
+        <label for="rep2"> Gossips about his character </label> <br>
+        <input type="checkbox" id="rep3" name="rep3" value="200" class="rep">
+        <label for="rep3"> General gossips around his person </label> <br>
+        <br>
+        <label for="letter">Love letter</label> 
+        <br>
+        <textarea maxlength="500"> </textarea>
+        <br>
+        <br>
+        <button input type="button" id="result"> Find out whether he is Mr. Right </button>
+    </form>
+    <script src="broom.js"> </script>
+</body>
+</html>
